@@ -1,0 +1,7 @@
+# Unlabeled Changes
+
+* `ember-styleguide`
+  * Component: es-button ([@MelSumner](https://github.com/MelSumner))
+
+
+*Cannot plan release until the above changes are labeled*.
