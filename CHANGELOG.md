@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2024-06-26)
 
 ember-styleguide 11.0.1 (patch)
