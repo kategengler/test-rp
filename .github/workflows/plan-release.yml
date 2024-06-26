@@ -4,7 +4,7 @@ on:
     branches:
       - main
       - master
-  pull_request:
+  pull_request_target:
     types:
       - labeled
 
@@ -53,9 +53,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 18
-      
+
       - run: npm ci
-      
+
       - name: "Generate Explanation and Prep Changelogs"
         id: explanation
         run: |
