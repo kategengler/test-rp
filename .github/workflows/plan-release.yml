@@ -42,7 +42,7 @@ jobs:
       explanation: ${{ steps.explanation.outputs.text }}
     # only run on push event if plan wasn't updated (don't create a release plan when we're releasing)
     # only run on labeled event if the PR has already been merged
-    if: (github.event_name == 'push' && needs.check-plan.outputs.command != 'release') || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    if: (github.event_name == 'push' && needs.check-plan.outputs.command != 'release') || (github.event_name == 'pull_request_target' && github.event.pull_request.merged == true)
 
     steps:
       - uses: actions/checkout@v4
